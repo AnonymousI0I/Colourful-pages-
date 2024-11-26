@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colorful Page</title>
+<style>
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: lightblue;
+  }
+  .flex-item {
+    flex: 0 0 200px;
+    border: 2px solid gray;
+    width: 100px;
+    height: 200px;
+    margin: 5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item" id="item1">item1</div>
+  <div class="flex-item" id="item2">item2</div>
+  <div class="flex-item" id="item3">item3</div>
+</div>
+
+<script>
+  // Select each flex item using its ID
+  const item1 = document.querySelector('#item1');
+  const item2 = document.querySelector('#item2');
+  const item3 = document.querySelector('#item3');
+
+  // Set styles for each item
+  item1.style.background = 'red';
+  item1.style.border = '3px solid red';
+
+  item2.style.background = 'purple';
+  item2.style.border = '3px solid purple';
+
+  item3.style.background = 'green';
+  item3.style.border = '3px solid green';
+</script>
+
+</body>
+</html>
